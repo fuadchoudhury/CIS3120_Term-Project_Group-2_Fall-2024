@@ -25,18 +25,3 @@ class Nba_api_config:
     def get_headers(self):
 
         return self.headers
-
-
-    def fetch_data(self, endpoint):
-        """
-        Fetches data from the specified API endpoint.
-        :param endpoint: API endpoint to fetch data from.
-        :return: JSON data if successful, None otherwise.
-        """
-        try:
-            response = requests.get(f"{self.base_url}/{endpoint}")
-            response.raise_for_status()
-            return response.json()
-        except requests.exceptions.RequestException as e:
-            print(f"Error fetching data: {e}")
-            return None
