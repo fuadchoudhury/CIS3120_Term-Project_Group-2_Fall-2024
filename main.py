@@ -18,6 +18,7 @@ class NBATopPlayersByPosition:
         
         return top_10
 
+
 if __name__ == "__main__":
     # Step 1: Clean salaries data
     print("Cleaning salaries data...")
