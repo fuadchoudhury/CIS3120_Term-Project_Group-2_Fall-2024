@@ -50,6 +50,7 @@ if __name__ == "__main__":
         print(f"\nTop 10 Players for Position: {position}")
         print(top_10_players[['player', 'pos', '2024/2025']])
 
+# Step 5: Prompt user to input position
 position = input("Enter the position (e.g., PG, SG, SF, PF, C): ").upper()
 
 try:
@@ -61,14 +62,8 @@ try:
     if top_10_players.empty:
         raise ValueError(f"No players found for position '{position}'.")
 
-    # Step 7: Display and save the result
+    # Step 7: Display the result
     print(f"\nTop 10 Players for Position: {position}")
     print(top_10_players[['player', 'pos', '2024/2025']])
-
-    # Save to a CSV file
-    output_file = f"top_10_{position}.csv"
-    top_10_players.to_csv(output_file, index=False)
-    print(f"Top 10 players for position '{position}' saved to '{output_file}'.")
 except ValueError as e:
     print(f"Error: {e}")
-
