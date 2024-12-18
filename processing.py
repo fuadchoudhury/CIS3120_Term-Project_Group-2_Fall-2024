@@ -23,3 +23,4 @@ def merge_data(salaries_df, active_players_df):
         how="inner"
     )
     return merged_df
+
