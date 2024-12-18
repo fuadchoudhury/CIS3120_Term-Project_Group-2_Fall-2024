@@ -67,4 +67,4 @@ try:
     print(top_10_players[['player', 'pos', '2024/2025']])
 except ValueError as e:
     print(f"Error: {e}")
-# ss
+# sss
