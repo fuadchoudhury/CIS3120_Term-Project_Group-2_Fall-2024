@@ -34,3 +34,14 @@ The project is focused on NBA player salaries analytics.
 ### 3. **Output**
 - The program will display a table of the top 10 players for the specified position based on their salaries.
 - A bar chart will also be generated, showing player salaries for the chosen position.
+
+
+### **Required Libraries**
+- `pandas`: For data manipulation and analysis.
+- `matplotlib`: For creating bar chart visualizations.
+- `seaborn`: For enhancing plots and visualizations.
+- `nba_api`: For fetching active player data from the NBA API.
+
+Install the required libraries using:
+```bash
+pip install pandas matplotlib seaborn nba_api
